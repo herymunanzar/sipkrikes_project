@@ -14,20 +14,10 @@
             <div class="navbar-brand">
                 <!-- Logo icon -->
                 <a href="<?= base_url('home') ?>">
-                    <b class="logo-icon">
-                        <!-- Dark Logo icon -->
-                        <img src="<?= base_url('assets/images/logo-rha-bencana-removebg.png') ?>" height="60" alt="homepage" class="dark-logo" />
-                        <!-- Light Logo icon -->
-                        <img src="<?= base_url('assets/images/logo-rha-bencana-removebg.png') ?>" height="60" alt="homepage" class="light-logo" />
-                    </b>
+                    <img src="<?= base_url('assets/images/logo-rha-bencana-removebg.png') ?>" height="45" alt="homepage" class="logo-icon m-0" />
                     <!--End Logo icon -->
                     <!-- Logo text -->
-                    <span class="logo-text ml-2">
-                        <!-- dark Logo text -->
-                        <img src="<?= base_url('assets/images/sipkrikes_nobg.png') ?>" height="50" width="100" alt="homepage" class="dark-logo" />
-                        <!-- Light Logo text -->
-                        <img src="<?= base_url('assets/images/sipkrikes_nobg.png') ?>" class="light-logo" height="50" width="100" alt="homepage" />
-                    </span>
+                    <img src="<?= base_url('assets/images/sipkrikes_nobg.png') ?>" alt="homepage" height="45" class="logo-text" />
                 </a>
             </div>
             <!-- ============================================================== -->
@@ -138,13 +128,13 @@
                 <!-- ============================================================== -->
                 <!-- User profile and search -->
                 <!-- ============================================================== -->
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown d-none d-md-block">
                     <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                        <img src="<?= $this->session->userdata('role') == 'admin' ? base_url('assets/images/navbar/admin.png') : base_url('assets/images/navbar/user.png') ?>" alt="user" class="rounded-circle" width="40">
-                        <span class="ml-2 d-none d-lg-inline-block">
+                        <!-- <img src="<?= $this->session->userdata('role') == 'admin' ? base_url('assets/images/navbar/admin.png') : base_url('assets/images/navbar/user.png') ?>" alt="user" class="rounded-circle" width="40"> -->
+                        <span class="ml-2 btn btn-secondary btn-rounded text-white">
                             <span>Hallo,</span>
-                            <span class="text-dark"><?= $this->session->userdata('nama') ?></span>
+                            <span class="text-white"><?= $this->session->userdata('nama') ?></span>
                             <i data-feather="chevron-down"class="svg-icon"></i>
                         </span>
                     </a>
@@ -162,6 +152,17 @@
                         </a>
                     </div>
                 </li>
+                
+                <li class="nav-item d-block d-md-none">
+                    <a class="nav-link" href="<?= base_url("user") ?>">My Profile</a>
+                </li>
+                <li class="nav-item d-block d-md-none">
+                    <a class="nav-link" href="<?= base_url("user/edit/" . $this->session->userdata('id_user')) ?>">Account Setting</a>
+                </li>
+                <li class="nav-item d-block d-md-none">
+                    <a class="nav-link" href="<?= base_url('logout') ?>">Logout</a>
+                </li>
+                
                 <!-- ============================================================== -->
                 <!-- User profile and search -->
                 <!-- ============================================================== -->

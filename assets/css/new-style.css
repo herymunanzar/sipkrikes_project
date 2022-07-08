@@ -1,0 +1,50 @@
+.auth-wrapper .auth-box .modal-bg-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.auth-wrapper .auth-box {
+    /*  */
+    margin: unset !important;
+}
+
+.bg-gray-custom {
+    background-color: #fbfbfb;
+}
+
+.sidebar-nav {
+    padding-bottom: 20px;
+}
+
+.sidebar-nav #sidebarnav .sidebar-item .sidebar-link {
+    font-size: 14px;
+    padding: 5px 30px;
+}
+
+#main-wrapper[data-layout="vertical"] .topbar[data-navbarbg="skin6"] {
+    background: #e8eaec;
+}
+
+@media screen and (max-width:767px) {
+    .bg-gray-custom {
+        background-color: #fff;
+    }
+
+    .auth-wrapper .auth-box {
+        min-height: 100vh;
+    }
+
+    .page-breadcrumb {
+        padding: 20px 15px 0;
+    }
+
+    .page-wrapper>.container-fluid {
+        padding: 15px;
+    }
+
+    .sidebar-nav #sidebarnav .sidebar-item .sidebar-link {
+        /* font-size: 14px !important; */
+        padding: 30px !important;
+    }
+}

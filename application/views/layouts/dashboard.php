@@ -19,6 +19,7 @@
     <link href="<?= base_url('assets/css/icons/font-awesome/css/fontawesome-all.min.css') ?>" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/css/style.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/new-style.css') ?>" rel="stylesheet">
 </head>
 
 <body>
@@ -116,6 +117,7 @@
     <!-- ============================================================== -->
     <!-- End Main Wrapper -->
     <!-- ============================================================== -->
+    
     <script src="<?= base_url('assets/libs/jquery/jquery.min.js') ?>"></script>
     <script src="<?= base_url('assets/libs/popper.js/umd/popper.min.js') ?>"></script>
     <script src="<?= base_url('assets/libs/bootstrap/js/bootstrap.min.js') ?>"></script>
@@ -128,7 +130,7 @@
 
     <!-- Alert Flash Message -->
     <script src="<?= base_url('assets/js/sweetalert.min.js') ?>"></script>
-
+    
     <!-- Cetak struk -->
     <script>
 		function printDiv(divName){
@@ -170,8 +172,7 @@
                         var html = '';
                         var i;
                         for(i=0; i<data.length; i++){
-                            //html += '<option value='+data[i].id_kabkot+'>'+data[i].nama_kabkot+'</option>';
-                            html += '<option value='+'"'+data[i].nama_kabkot+'"'+'>'+data[i].nama_kabkot+'</option>';
+                            html += '<option value='+data[i].id_kabkot+'>'+data[i].nama_kabkot+'</option>';
                         }
                         $('#kabkot-option').html(html);
                     }
