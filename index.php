@@ -65,10 +65,10 @@ switch ($_SERVER['HTTP_HOST']) {
 	case 'localhost:8080':
 		$env = 'development';
 		break;
-	case 'www.sipkrikes.com':
+	case 'sipkrikes.com':
 		$env = 'testing';
 		break;
-	case 'www.sipkrikes.com':
+	case 'sipkrikes.com':
 		$env = 'production';
 		break;
 	default:
