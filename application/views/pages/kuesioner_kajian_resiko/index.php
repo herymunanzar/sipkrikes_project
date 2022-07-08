@@ -43,7 +43,7 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                <select class="form-control" name="nama_kabkot" id="kabkot-option">
+                                                <select class="form-control" name="id_kabkot" id="kabkot-option">
                                                     <option value="" selected>=== Pilih Kabupaten/Kota ===</option>
                                                 </select>
                                                 </div>
@@ -51,7 +51,7 @@
                                         </div>
                                         <div class="row mt-1">
                                             <div class="col-md-12">
-                                                <?= form_error('nama_kabkot') ?>
+                                                <?= form_error('id_kabkot') ?>
                                             </div>
                                         </div>
                                     </div>

@@ -29,11 +29,12 @@ class Kuesioner_kajian_resikos extends MY_Controller
         $data['content']            = $this->kuesioner_kajian_resikos->select([
                                         'kuesioner_kajian_resiko_kabkot.id AS id',
                                         'prov.nama_prov AS nama_prov',
-                                        'kuesioner_kajian_resiko_kabkot.nama_kabkot AS nama_kabkot',
+                                        'kabkot.nama_kabkot AS nama_kabkot',
                                         'kuesioner_kajian_resiko_kabkot.nama_dinas AS nama_dinas',
                                         'kuesioner_kajian_resiko_kabkot.website AS website',
                                         'kapasitas_kuesioner_kajian_resiko_kabkot.id AS id_kapasitas'])
                                         ->join('prov')
+                                        ->join('kabkot')
                                         ->join_right('kapasitas_kuesioner_kajian_resiko_kabkot')
                                         ->get();
         $data['page']               = 'pages/kuesioner_kajian_resikos/index';
@@ -51,7 +52,7 @@ class Kuesioner_kajian_resikos extends MY_Controller
          $data['content'] = $this->kuesioner_kajian_resikos->select([
                             'kuesioner_kajian_resiko_kabkot.id AS id',
                             'prov.nama_prov AS nama_prov',
-                            'kuesioner_kajian_resiko_kabkot.nama_kabkot AS nama_kabkot',
+                            'kabkot.nama_kabkot AS nama_kabkot',
                             'kuesioner_kajian_resiko_kabkot.nama_dinas AS nama_dinas',
                             'kuesioner_kajian_resiko_kabkot.alamat AS alamat',
                             'kuesioner_kajian_resiko_kabkot.telepon AS telepon',
@@ -76,6 +77,7 @@ class Kuesioner_kajian_resikos extends MY_Controller
                             'kuesioner_kajian_resiko_kabkot.kerentanan_ipm AS kerentanan_ipm',
                             'kuesioner_kajian_resiko_kabkot.kerentanan_ipkm AS kerentanan_ipkm'])
                             ->join('prov')
+                            ->join('kabkot')
                             ->where('kuesioner_kajian_resiko_kabkot.id', $id)
                             ->first();
 
@@ -149,7 +151,7 @@ class Kuesioner_kajian_resikos extends MY_Controller
          $data['content'] = $this->kuesioner_kajian_resikos->select([
                         'kuesioner_kajian_resiko_kabkot.id AS id',
                         'prov.nama_prov AS nama_prov',
-                        'kuesioner_kajian_resiko_kabkot.nama_kabkot AS nama_kabkot',
+                        'kabkot.nama_kabkot AS nama_kabkot',
                         'kuesioner_kajian_resiko_kabkot.nama_dinas AS nama_dinas',
                         'kuesioner_kajian_resiko_kabkot.ancam_jenis_ancaman AS ancam_jenis_ancaman',
                         'kuesioner_kajian_resiko_kabkot.kerentanan_ipm AS kerentanan_ipm',
@@ -212,6 +214,7 @@ class Kuesioner_kajian_resikos extends MY_Controller
                         'kapasitas_kuesioner_kajian_resiko_kabkot.kesiapsiaga_psc_24jam AS kesiapsiaga_psc_24jam'
                         ])
                         ->join('prov')
+                        ->join('kabkot')
                         ->join_right('kapasitas_kuesioner_kajian_resiko_kabkot')
                         ->where('kuesioner_kajian_resiko_kabkot.id', $id)
                         ->first();
