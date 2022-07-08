@@ -44,6 +44,7 @@ class Pelaporan extends MY_Controller
         }
 
         // Input data
+        //$this->pelaporan->table = 'pelaporan_awal';
         if ($this->pelaporan->run($input)) {
             $this->session->set_flashdata('success', 'Successfully input pelaporan awal');
             redirect(base_url('pelaporan'));

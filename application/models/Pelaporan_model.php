@@ -4,6 +4,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Pelaporan_model extends MY_Model
 {
+    protected $table = 'pelaporan_awal';
+    
     public function getDefaultValues()
     {
         return [
@@ -66,7 +68,7 @@ class Pelaporan_model extends MY_Model
         $data = [
             'nama_dinas'                                    => $input->nama_dinas, //have required validation
             'jenis_bencana'                                 => $input->jenis_bencana,
-            'waktu_kejadian'                                => $input->waktu_kejadian,
+            'waktu_kejadian'                                => $input->tanggal.' '.$input->waktu,
             'deskripsi_bencana'                             => $input->deskripsi_bencana,
             'id_prov'                                       => $input->id_prov,
             'id_kabkot'                                     => $input->id_kabkot,

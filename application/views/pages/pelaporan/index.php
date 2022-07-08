@@ -163,7 +163,9 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <?= form_input('nama_kec', $input->nama_kec, ['class' => 'form-control', 'placeholder' => 'Masukkan Nama Kecamatan']) ?>
+                                                    <select class="form-control" name="nama_kec" id="kec-option">
+                                                        <option value="" selected>=== Pilih Kecamatan ===</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
