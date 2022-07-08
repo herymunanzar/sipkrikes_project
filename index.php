@@ -58,7 +58,25 @@ date_default_timezone_set("Asia/Jakarta");
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+switch ($_SERVER['HTTP_HOST']) {
+	case 'localhost':
+		$env = 'development';
+		break;
+	case 'localhost:8080':
+		$env = 'development';
+		break;
+	case 'www.sipkrikes.com':
+		$env = 'testing';
+		break;
+	case 'www.sipkrikes.com':
+		$env = 'production';
+		break;
+	default:
+		$env = 'development';
+		break;
+}
+
+define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : $env);
 
 /*
  *---------------------------------------------------------------

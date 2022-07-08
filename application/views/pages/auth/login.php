@@ -41,8 +41,11 @@
                     <h1 style="font-size: 22px; font-weight: 500;" class="mb-lg-4 mb-1 text-dark">SISTEM INFORMASI PENANGGULANGAN KRISIS KESEHATAN</h1>
                     <div class="d-none d-md-block">
                         <div class="w-100 d-flex gap-2 align-items-center justify-content-between mt-auto p-3">
-                            <img src="<?= base_url('assets/images/Logo-kemenkes-icon.png'); ?>" alt="" width="55">
-                            <img src="<?= base_url('assets/images/logo-poltekkes-aceh.png'); ?>" alt="" width="55">
+                            <small>© 2022 SIPKRIKES. All Rights Reserved</small>
+                            <div class="w-auto">
+                                <img src="<?= base_url('assets/images/Logo-kemenkes-icon.png'); ?>" alt="" width="30">
+                                <img src="<?= base_url('assets/images/logo-poltekkes-aceh.png'); ?>" alt="" width="30">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,6 +82,17 @@
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="d-block d-md-none">
+                        <div class="w-100 d-flex gap-2 align-items-center justify-content-between mt-auto p-3">
+                            <small>© 2022 SIPKRIKES. All Rights Reserved</small>
+                            <div class="w-auto">
+                                <img src="<?= base_url('assets/images/Logo-kemenkes-icon.png'); ?>" alt="" width="30">
+                                <img src="<?= base_url('assets/images/logo-poltekkes-aceh.png'); ?>" alt="" width="30">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
