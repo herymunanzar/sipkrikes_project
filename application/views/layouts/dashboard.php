@@ -100,10 +100,13 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer>
-                <div class="footer text-right text-muted">
-                    © 2022 SIPKRIKES. All Rights Reserved
-                    | <img src="<?= base_url('assets/images/logo-poltekkes-aceh.png') ?>" height="25" alt="homepage" class="dark-logo" />
-                    | <img src="<?= base_url('assets/images/logo-Kemenkes.png') ?>" height="25" alt="homepage" class="dark-logo" />
+                <div class="footer text-muted d-flex justify-content-between justify-content-md-end align-items-center">
+                    <small class="mr-3 text-md-right text-left">© 2022 SIPKRIKES. All Rights Reserved</small>
+                    <div class="d-flex align-items-center">
+                        <img src="<?= base_url('assets/images/logo-poltekkes-aceh.png') ?>" height="25" alt="homepage" class="mr-2"/>
+                        <img src="<?= base_url('assets/images/logo-Kemenkes.png') ?>" height="25" alt="homepage"/>
+                    </div>
+                    
                 </div>
             </footer>
             <!-- ============================================================== -->
