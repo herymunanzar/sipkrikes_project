@@ -7,7 +7,7 @@ File database bisa ditemukan di /database/db_sipkrikes.sql
 ## Tampilan Dashboard
 
 <p align="center">
-  <img src="/assets/images/sipkrikes.png" alt="Dashboard Screenshot">
+  <img src="/assets/images/logo.png" alt="Dashboard Screenshot">
 </p>
 
 ## Cara Login
