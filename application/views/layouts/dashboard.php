@@ -175,9 +175,29 @@
                         var html = '';
                         var i;
                         for(i=0; i<data.length; i++){
-                            html += '<option value='+data[i].id_kabkot+'>'+data[i].nama_kabkot+'</option>';
+                            html += '<option value='+data[i].id+'>'+data[i].nama_kabkot+'</option>';
                         }
                         $('#kabkot-option').html(html);
+                    }
+                });
+                return false;
+            });
+
+            $('#kabkot-option').change(function(){
+                var id=$(this).val();
+                $.ajax({
+                    url : "<?php echo site_url('listkec');?>",
+                    method : "POST",
+                    data : {id: id},
+                    async : true,
+                    dataType : 'json',
+                    success: function(data){
+                        var html = '';
+                        var i;
+                        for(i=0; i<data.length; i++){
+                            html += '<option value='+'"'+data[i].nama_kec+'"'+'>'+data[i].nama_kec+'</option>';
+                        }
+                        $('#kec-option').html(html);
                     }
                 });
                 return false;

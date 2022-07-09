@@ -12,9 +12,9 @@ MySQL - 10.4.11-MariaDB : Database - db_sipkrikes
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`n1604238_sipkrikesdb` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`db_sipkrikes` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 
-USE `n1604238_sipkrikesdb`;
+USE `db_sipkrikes`;
 
 /*Table structure for table `jenis_bencana` */
 
@@ -748,10 +748,6 @@ CREATE TABLE `kapasitas_kuesioner_kajian_resiko_kabkot` (
 
 LOCK TABLES `kapasitas_kuesioner_kajian_resiko_kabkot` WRITE;
 
-insert  into `kapasitas_kuesioner_kajian_resiko_kabkot`(`id`,`id_kuesioner_kajian_resiko_kabkot`,`kebijakan_peraturan`,`kebijakan_sk`,`kebijakan_sop`,`kebijakan_koordinasi`,`kebijakan_unit`,`kebijakan_sk_klaster`,`kebijakan_dinas_identifikasi`,`kebijakan_dinas_mou_lembaga`,`penguatan_jumlah_seluruh_fas_pel_kes`,`penguatan_jumlah_puskesmas`,`penguatan_jumlah_rs`,`penguatan_kapasitas_tempat_tidur_rs`,`penguatan_proporsi_rs_memiliki_tim`,`penguatan_dinkes_memiliki_program`,`penguatan_dinkes_memfasilitasi`,`penguatan_jumlah_dokter_spesialis`,`penguatan_jumlah_dokter_umum`,`penguatan_jumlah_bidan`,`penguatan_jumlah_perawat`,`penguatan_ketenagaan_unit`,`penguatan_tim_rha`,`penguatan_tim_penyelidikan_epidemiologi`,`penguatan_tim_reaksi_cepat`,`penguatan_memetakan_petugas`,`penguatan_sop`,`penguatan_petugas_managemen`,`penguatan_petugas_medis`,`penguatan_petugas_non_medis`,`penguatan_peningkatan`,`peringatan_sistem`,`mitigasi_fasilitas_kepada_masyarakat`,`mitigasi_peta_kapasitas`,`mitigasi_peta_kelompok_rentan`,`mitigasi_peta_ancaman`,`mitigasi_alokasi_anggaran`,`mitigasi_data_kejadian`,`mitigasi_kontak_person`,`mitigasi_media_informasi`,`mitigasi_sarana_pengumpulan_data`,`mitigasi_sistem_pemantauan`,`kesiapsiaga_menyusun_rencana`,`kesiapsiaga_melakukan_simulasi`,`kesiapsiaga_sop_penaganan`,`kesiapsiaga_sop_obat`,`kesiapsiaga_sop_bantuan_relawan`,`kesiapsiaga_sop_pemantauan`,`kesiapsiaga_sop_pelaporan`,`kesiapsiaga_sop_pelayanan_rujukan`,`kesiapsiaga_sop_pelayanan_kesehatan`,`kesiapsiaga_dana_tak_terduga`,`kesiapsiaga_paham_dsp_bnpb`,`kesiapsiaga_sarana`,`kesiapsiaga_sesuai_sarana`,`kesiapsiaga_kecukupan_sarana`,`kesiapsiaga_psc_24jam`) values 
-(2,4,'ada','ada','ada','rutin','ada','ada','melakukan','ya','12345','12345','12345','12345','12345','memiliki','ya, sebagian atau seluruh','12345','12345','12345','12345','ada','memiliki','memiliki','memiliki','melakukan','ada','memiliki','memiliki','memiliki','ada','ya, sebagian atau seluruh','melakukan','memiliki','memiliki','memiliki','ya','ada','ada','ada','ada','ada','ada','melakukan','memiliki','memiliki','memiliki','memiliki','memiliki','memiliki','memiliki','ya','ya','memiliki','ya','ya','memiliki'),
-(4,3,'tidak ada','tidak ada','tidak ada','tidak pernah','tidak ada','tidak ada','tidak melakukan','tidak','','','','','','tidak memiliki','belum ada','','','','','tidak ada','tidak memiliki','tidak memiliki','tidak memiliki','tidak melakukan','tidak ada','tidak memiliki','tidak memiliki','tidak memiliki','tidak ada','tidak ada','tidak melakukan','tidak memiliki','tidak memiliki','tidak memiliki','tidak','tidak ada','tidak ada','tidak ada','tidak ada','tidak ada','tidak ada','tidak melakukan','tidak memiliki','tidak memiliki','tidak memiliki','tidak memiliki','tidak memiliki','tidak memiliki','tidak memiliki','tidak','tidak','tidak memiliki','tidak','tidak','tidak memiliki');
-
 UNLOCK TABLES;
 
 /*Table structure for table `kec` */
@@ -761,16 +757,16 @@ DROP TABLE IF EXISTS `kec`;
 CREATE TABLE `kec` (
   `id_prov` int(11) NOT NULL,
   `id_kabkot` int(11) NOT NULL,
-  `id_kec` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `nama_kec` char(40) NOT NULL,
-  PRIMARY KEY (`id_kec`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `kec` */
 
 LOCK TABLES `kec` WRITE;
 
-insert  into `kec`(`id_prov`,`id_kabkot`,`id_kec`,`nama_kec`) values 
+insert  into `kec`(`id_prov`,`id_kabkot`,`id`,`nama_kec`) values 
 (11,1101,1101010,'Teupah Selatan'),
 (11,1101,1101020,'Simeulue Timur'),
 (11,1101,1101021,'Teupah Barat'),
@@ -2160,7 +2156,7 @@ DROP TABLE IF EXISTS `kuesioner_kajian_resiko_kabkot`;
 CREATE TABLE `kuesioner_kajian_resiko_kabkot` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_prov` int(11) DEFAULT NULL,
-  `nama_kabkot` char(40) DEFAULT NULL,
+  `id_kabkot` int(11) DEFAULT NULL,
   `nama_dinas` varchar(100) DEFAULT NULL,
   `alamat` text DEFAULT NULL,
   `telepon` varchar(50) DEFAULT NULL,
@@ -2185,17 +2181,14 @@ CREATE TABLE `kuesioner_kajian_resiko_kabkot` (
   `kerentanan_ipm` varchar(10) DEFAULT NULL,
   `kerentanan_ipkm` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `kuesioner_kajian_resiko_kabkot` */
 
 LOCK TABLES `kuesioner_kajian_resiko_kabkot` WRITE;
 
-insert  into `kuesioner_kajian_resiko_kabkot`(`id`,`id_prov`,`nama_kabkot`,`nama_dinas`,`alamat`,`telepon`,`fax`,`website`,`email`,`responder_nama_satu`,`responder_jabatan_satu`,`responder_no_hp_satu`,`responder_nama_dua`,`responder_jabatan_dua`,`responder_no_hp_dua`,`karakteristik_luas`,`karakteristik_letak`,`karakteristik_jumlah_kec`,`karakteristik_topografi`,`karakteristik_jumlah_penduduk`,`karakteristik_alat_komunikasi`,`karakteristik_akses_transportasi`,`ancam_jenis_ancaman`,`ancam_riwayat`,`kerentanan_ipm`,`kerentanan_ipkm`) values 
-(1,11,'Kota','Testing Dinas Kesehatan','Testing Alamat','Testing Telepon','Testing Fax','Testing Website','Testing Email','Testing Nama Responder 1','Testing Jabatan Responder 1','Testing No HP Responder 1','Testing Nama Responder 2','Testing Jabatan Responder 2','Testing No HP Responder 2','Testing Luas Wilayah','Testing Geografis dan Batas Wilayah','Testing Ke','Testing Topografi','Testing Jumlah Pendu','Testing Alat Komunikasi','Testing Akses Transportasi','testing ancaman bencana','testing riwayat keajdian','testing IP','testing IP'),
-(2,11,'Kota','Testing Dinas Kesehatan','Testing Alamat','Testing Telepon','Testing Fax','Testing Website','Testing Email','Testing Nama Responder 1','Testing Jabatan Responder 1','Testing No HP Responder 1','Testing Nama Responder 2','Testing Jabatan Responder 2','Testing No HP Responder 2','Testing Luas Wilayah','Testing Geografis dan Batas Wilayah','Testing Ke','Testing Topografi','Testing Jumlah Pendu','Testing Alat Komunikasi','Testing Akses Transportasi','testing ancaman bencana','testing riwayat keajdian','testing IP','testing IP'),
-(3,11,'Kabupaten','Testing Dinas Kesehatan','Testing Alamat','Testing Telepon','Testing Fax','Testing Website','Testing Email','Testing Nama Responder 1','Testing Jabatan Responder 1','Testing No HP Responder 1','Testing Nama Responder 2','Testing Jabatan Responder 2','Testing No HP Responder 2','Testing Luas Wilayah','Testing Geografis dan Batas Wilayah','Testing Ke','Testing Topografi','Testing Jumlah Pendu','Testing Alat Komunikasi','Testing Akses Transportasi','testing jenis ancaman','testing riwayat kejadian','testing IP','testing IP'),
-(4,11,'Kota Subulussalam','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','Testing','testing','testing','testing','testing');
+insert  into `kuesioner_kajian_resiko_kabkot`(`id`,`id_prov`,`id_kabkot`,`nama_dinas`,`alamat`,`telepon`,`fax`,`website`,`email`,`responder_nama_satu`,`responder_jabatan_satu`,`responder_no_hp_satu`,`responder_nama_dua`,`responder_jabatan_dua`,`responder_no_hp_dua`,`karakteristik_luas`,`karakteristik_letak`,`karakteristik_jumlah_kec`,`karakteristik_topografi`,`karakteristik_jumlah_penduduk`,`karakteristik_alat_komunikasi`,`karakteristik_akses_transportasi`,`ancam_jenis_ancaman`,`ancam_riwayat`,`kerentanan_ipm`,`kerentanan_ipkm`) values 
+(5,12,1274,'asdasdas','asdasads','koo','n','no','o','mo','m','omok','mko','mok','okm','kmo','mokmo','kmok','om','om','omk','okm','mok','omkokm','mko','mmok');
 
 UNLOCK TABLES;
 
@@ -2258,11 +2251,16 @@ CREATE TABLE `pelaporan_awal` (
   `bantuan_yang_diperlukan` text DEFAULT NULL,
   `rencana_tindak_lanjut` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `pelaporan_awal` */
 
 LOCK TABLES `pelaporan_awal` WRITE;
+
+insert  into `pelaporan_awal`(`id`,`nama_dinas`,`jenis_bencana`,`waktu_kejadian`,`deskripsi_bencana`,`id_prov`,`id_kabkot`,`nama_kec`,`desa_dusun`,`jumlah_penduduk_terancam`,`topografi`,`jumlah_korban_meninggal`,`jumlah_korban_hilang`,`jumlah_luka_berat_rawat_inap`,`jumlah_luka_ringan_rawat_jalan`,`jumlah_pengungsi_penduduk_rentan`,`fasilitas_umum_akses`,`fasilitas_umum_jalur_komunikasi`,`fasilitas_umum_jaringan_listrik`,`fasilitas_umum_air_bersih`,`kondisi_faskes_kondisi`,`kondisi_faskes_fungsi_pelayanan`,`upaya_penanggulangan_pelayanan_kesehatan`,`upaya_penanggulangan_pengendalian`,`upaya_penanggulangan_pelayanan_gizi`,`upaya_penanggulangan_pelayanan_kesehatan_jiwa`,`upaya_penanggulangan_reproduksi_dan_kia`,`upaya_penanggulangan_dvi`,`upaya_penanggulangan_logistik_kesehatan`,`hambatan`,`bantuan_yang_diperlukan`,`rencana_tindak_lanjut`) values 
+(1,'Testing Dinas Kesehatan','Gempa Bumi','2022-07-16 12:12:00','',0,0,'','','','','','','','','','sukar dijangkau','','','tidak tercemar','tidak rusak','tidak berfungsi','','','','','','','','','',''),
+(2,'Testing Dinas Kesehatan','Gempa Bumi','2022-07-09 13:13:00','testing deskripsi bencana',11,0,'Kecamatan Banda Sakti','Desa Tumpok Teungoh','123','Pantai','123','123','123','132','123','sukar dijangkau','telepon','baik','tidak tercemar','tidak rusak','tidak berfungsi','testing klaster upaya','testing pengendalian upaya','testing sub kaster gizi','testing upaya sub klaster pelayanan','testing klaster kesehatan','testing klaster DVI','testing klaster Upaya logistik','testing klaster hambatan pelayanan','testing bantuan','testing rencana tindak lanjut'),
+(3,'aasdasda','Gagal Teknologi','2022-06-27 12:12:00','asdasdasd',12,1277,'Padangsidimpuan Angkola Julu','asdasd','asdasd','Pantai','asdasd','asdasd','asdasda','asdasd','asdasd','sukar dijangkau','asdasd','baik','tidak tercemar','tidak rusak','tidak berfungsi','asdasd','asdasd','asdasd','asdasd','asdasd','asdasd','asdasdas','asdasd','asdasd','asdasdas');
 
 UNLOCK TABLES;
 

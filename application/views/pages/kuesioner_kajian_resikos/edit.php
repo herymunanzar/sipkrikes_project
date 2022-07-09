@@ -43,16 +43,20 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                <select class="form-control" name="nama_kabkot" id="kabkot-option">
-                                                    <option value="" selected>=== Pilih Kabupaten  ===</option>
-                                                    <option value="<?= $input->nama_kabkot ?>" selected> <?= $input->nama_kabkot ?></option>
+                                                <select class="form-control" name="id_kabkot" id="kabkot-option">
+                                                    <option value="" selected>=== Pilih Kabupaten / Kota ===</option>
+                                                    <?php foreach(getKabkota($input->id_prov) as $kabkot) : ?>
+                                                        <option value="<?= $kabkot->id ?>" <?= $input->id_kabkot == $kabkot->id ? 'selected' : '' ?>>
+                                                            <?= $kabkot->nama_kabkot ?>
+                                                        </option>
+                                                    <?php endforeach ?>
                                                 </select>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row mt-1">
                                             <div class="col-md-12">
-                                                <?= form_error('nama_kabkot') ?>
+                                                <?= form_error('id_kabkot') ?>
                                             </div>
                                         </div>
                                     </div>

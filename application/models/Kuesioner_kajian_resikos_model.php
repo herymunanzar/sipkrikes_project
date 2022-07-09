@@ -10,7 +10,7 @@ class Kuesioner_kajian_resikos_model extends MY_Model
     {
         return [
             'id_prov'                          => '',
-            'nama_kabkot'                      => '',
+            'id_kabkot'                        => '',
             'nama_dinas'                       => '',
             'alamat'                           => '',
             'telepon'                          => '',
@@ -49,7 +49,7 @@ class Kuesioner_kajian_resikos_model extends MY_Model
                 ]
             ],
             [
-                'field' => 'nama_kabkot',
+                'field' => 'id_kabkot',
                 'label' => 'Kabupaten / Kota',
                 'rules' => 'required',
                 'errors' => [
