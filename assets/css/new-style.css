@@ -31,6 +31,10 @@
         background-color: #fff;
     }
 
+    .card .card-body {
+        padding: 15px !important;
+    }
+
     .auth-wrapper .auth-box {
         min-height: 100vh;
     }
@@ -47,4 +51,22 @@
         /* font-size: 14px !important; */
         padding: 30px !important;
     }
+}
+
+.table-style {
+    border: none !important;
+    color: unset !important;
+}
+
+.table-style-border {
+    color: unset !important;
+}
+
+.table-style td,
+.table-style th {
+    border: none !important;
+}
+
+.gap-2 {
+    gap: 0.5rem;
 }

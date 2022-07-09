@@ -12,25 +12,23 @@
                     <div class="d-flex align-items-center">
                         <h4 class="card-title">List Data Kajian Resiko Provinsi</h4>
                     </div>
-                    <div class="table-responsive">
-                        <table class="table table-bordered no-wrap v-middle mb-0">
+                    <div class="table-responsive mt-3">
+                        <table class="table table-sm table-style-border table-striped no-wrap font-14">
                             <thead>
-                                <tr class="">
-                                    <th class="border font-14 font-weight-medium text-muted text-center">Provinsi</th>
-                                    <th class="border font-14 font-weight-medium text-muted text-center">Dinas Kesehatan</th>
-                                    <th class="border font-14 font-weight-medium text-muted text-center">Website</th>
-                                    <th class="border font-14 font-weight-medium text-muted text-center">Detail</th>
-                                    <th class="border font-14 font-weight-medium text-muted text-center">Kapasitas</th>
-                                    <th class="border font-14 font-weight-medium text-muted text-center">Kesimpulan</th>
-                                    <th class="border font-14 font-weight-medium text-muted text-center">Hapus</th>
-                                </tr>
+                                <th class="py-2">Provinsi</th>
+                                <th class="py-2">Dinas Kesehatan</th>
+                                <th class="py-2">Website</th>
+                                <th class="py-2">Detail</th>
+                                <th class="py-2">Kapasitas</th>
+                                <th class="py-2">Kesimpulan</th>
+                                <th class="py-2">Hapus</th>
                             </thead>
                             <tbody>
                                 <?php foreach ($content as $row) : ?>
                                     <tr>
-                                        <td class="border-top-0 text-muted px-1 py-0 font-14"><?= $row->nama_prov ?></td>
-                                        <td class="border-top-0 text-muted px-1 py-0 font-14"><?= $row->nama_dinas ?></td>
-                                        <td class="border-top-0 text-muted px-1 py-0 font-14"><?= $row->website ?></td>
+                                        <td><?= $row->nama_prov ?></td>
+                                        <td><?= $row->nama_dinas ?></td>
+                                        <td><?= $row->website ?></td>
                                         <td class="border-top-0 text-center text-muted px-1 py-0">
                                             <a href="<?= base_url("kajian_resikos/detail/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-info-circle text-info"></i>
