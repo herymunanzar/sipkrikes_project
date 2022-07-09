@@ -1,22 +1,20 @@
-# Easy WMS
+# SIPKRIKES
 
-Aplikasi manajemen pergudangan berbasis web dengan menggunakan framework CodeIgniter 3
+Aplikasi sistem informasi penanggulangan krisis kesehatan berbasis web dengan menggunakan framework CodeIgniter 3
 
-File database bisa ditemukan di /assets/db/easy_wms.sql
+File database bisa ditemukan di /database/db_sipkrikes.sql
 
 ## Tampilan Dashboard
 
 <p align="center">
-  <img src="/assets/images/easy-wms.png" alt="Dashboard Screenshot">
+  <img src="/assets/images/sipkrikes.png" alt="Dashboard Screenshot">
 </p>
 
 ## Cara Login
 
 | User	|       Email				| Password |
 |:-----:|:-----------------:|:--------:|
-| Admin	| admin@easywms.com	| admin    |
-| Sunu	| sunu@easywms.com	| sunu     |
-| Amir	| amir@easywms.com	| amir     |
+| Admin	| admin@admin.com	  | admin    |
 
 <img src="/assets/images/users.png" alt="Tabel User" height="105">
 
