@@ -2,9 +2,7 @@
 <!-- Container fluid  -->
 <!-- ============================================================== -->
 <div class="container-fluid">
-    
     <?php $this->load->view('layouts/_alert') ?>
-    
     <div class="row">
         <div class="col-md-12">
             <div class="card">
@@ -13,7 +11,7 @@
                         <h4 class="card-title">List Data Kajian Resiko Provinsi</h4>
                     </div>
                     <div class="table-responsive mt-3">
-                        <table class="table table-sm table-style-border table-striped no-wrap font-14">
+                        <table class="table table-sm table-style-border table-striped no-wrap font-14" id="dataTable">
                             <thead>
                                 <th class="py-2">Provinsi</th>
                                 <th class="py-2">Dinas Kesehatan</th>

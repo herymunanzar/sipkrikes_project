@@ -13,12 +13,18 @@
                         <h4 class="card-title">List Data Pelaporan Awal Krisis Kesehatan Dinkes Kabupaten / Kota / Provinsi</h4>
                     </div>
                     <div class="table-responsive">
-                        <table class="table no-wrap v-middle mb-0">
+                        <table class="table no-wrap v-middle mb-0" id="dataTable">
                             <thead>
                                 <tr class="border-0">
                                     <th class="border-0 font-14 font-weight-medium text-muted text-center">Nama Dinas Kesehatan</th>
                                     <th class="border-0 font-14 font-weight-medium text-muted text-center">Jenis Bencana</th>
                                     <th class="border-0 font-14 font-weight-medium text-muted text-center">Provinsi</th>
+                                    <th class="border-0 font-14 font-weight-medium text-muted text-center">Lokasi Bencana</th>
+                                    <th class="border-0 font-14 font-weight-medium text-muted text-center">Data Korban Meninggal</th>
+                                    <th class="border-0 font-14 font-weight-medium text-muted text-center">Data Korban Hilang</th>
+                                    <th class="border-0 font-14 font-weight-medium text-muted text-center">Data Korban Luka Berat dan Ringan</th>
+                                    <th class="border-0 font-14 font-weight-medium text-muted text-center">Data Pengungsi</th>
+                                    <th class="border-0 font-14 font-weight-medium text-muted text-center">Data Fasilitas Kesehatan</th>
                                     <th class="border-0 font-14 font-weight-medium text-muted text-center">Detail</th>
                                     <th class="border-0 font-14 font-weight-medium text-muted text-center">Edit</th>
                                     <th class="border-0 font-14 font-weight-medium text-muted text-center">Hapus</th>
@@ -30,6 +36,54 @@
                                         <td class="border-top-0 text-muted px-2 py-2 font-14"><?= $row->nama_dinas ?></td>
                                         <td class="border-top-0 text-muted px-2 py-2 font-14"><?= $row->jenis_bencana ?></td>
                                         <td class="border-top-0 text-muted px-2 py-2 font-14"><?= $row->nama_prov ?></td>
+                                        <td class="border-top-0 text-center text-muted px-2 py-2">
+                                            <a href="<?= base_url("pelaporan_awal_lokasi_bencana/input_lokasi_bencana/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-map-marker-alt text-info"></i>
+                                            </a>
+                                            <a href="<?= base_url("pelaporan_awal_lokasi_bencana/lihat_lokasi_bencana/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-map text-info"></i>
+                                            </a>
+                                        </td>
+                                        <td class="border-top-0 text-center text-muted px-2 py-2">
+                                            <a href="<?= base_url("pelaporans/data_meninggal/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-pencil-alt text-info"></i>
+                                            </a>
+                                            <a href="<?= base_url("pelaporans/lihat_data_meninggal/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-clipboard-list text-info"></i>
+                                            </a>
+                                        </td>
+                                        <td class="border-top-0 text-center text-muted px-2 py-2">
+                                            <a href="<?= base_url("pelaporans/data_hilang/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-pencil-alt text-info"></i>
+                                            </a>
+                                            <a href="<?= base_url("pelaporans/lihat_data_hilang/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-clipboard-list text-info"></i>
+                                            </a>
+                                        </td>
+                                        <td class="border-top-0 text-center text-muted px-2 py-2">
+                                            <a href="<?= base_url("pelaporans/data_luka/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-pencil-alt text-info"></i>
+                                            </a>
+                                            <a href="<?= base_url("pelaporans/lihat_data_luka/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-clipboard-list text-info"></i>
+                                            </a>
+                                        </td>
+                                        <td class="border-top-0 text-center text-muted px-2 py-2">
+                                            <a href="<?= base_url("pelaporans/data_pengungsi/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-pencil-alt text-info"></i>
+                                            </a>
+                                            <a href="<?= base_url("pelaporans/data_pengungsi/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-clipboard-list text-info"></i>
+                                            </a>
+                                        </td>
+                                        <td class="border-top-0 text-center text-muted px-2 py-2">
+                                            <a href="<?= base_url("pelaporans/data_faskes/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-pencil-alt text-info"></i>
+                                            </a>
+                                            <a href="<?= base_url("pelaporans/data_faskes/$row->id") ?>" class="btn btn-sm">
+                                                <i class="fas fa-clipboard-list text-info"></i>
+                                            </a>
+                                        </td>
                                         <td class="border-top-0 text-center text-muted px-2 py-2">
                                             <a href="<?= base_url("pelaporans/detail/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-info text-info"></i>
