@@ -19,7 +19,15 @@
 
 .sidebar-nav #sidebarnav .sidebar-item .sidebar-link {
     font-size: 14px;
-    padding: 5px 30px;
+    padding: 10px 30px;
+    transition: all ease-in-out .5s;
+}
+
+.sidebar-nav #sidebarnav .sidebar-item .sidebar-link.active,
+.sidebar-nav #sidebarnav .sidebar-item .sidebar-link:hover {
+    background: #0f3650;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #main-wrapper[data-layout="vertical"] .topbar[data-navbarbg="skin6"] {

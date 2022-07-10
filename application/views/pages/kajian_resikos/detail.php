@@ -134,11 +134,6 @@
                                 <td>:</td>
                                 <td><?= $input->ancam_riwayat ?></td>
                             </tr>
-                            <tr>
-                                <td class="pl-3">2. Riwayat kejadian Krisis Kesehatan 5 tahun terakhir</td>
-                                <td>:</td>
-                                <td><?= $input->ancam_riwayat ?></td>
-                            </tr>
 
                             <!-- Kerentanan -->
                             <tr>
