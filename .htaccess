@@ -9,9 +9,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ ./index.php/$1 [L]
 
 # remove www from host
-RewriteCond %{HTTP_HOST} ^www\.(.+)
-RewriteCond %{HTTPS}s/%1 ^(on(s)|offs)/(.+)
-RewriteRule ^ http%2://%3%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
 
 # force HTTPS
 RewriteCond %{HTTPS} =off
