@@ -2,9 +2,9 @@
 <!-- Container fluid  -->
 <!-- ============================================================== -->
 <div class="container-fluid">
-    
+
     <?php $this->load->view('layouts/_alert') ?>
-    
+
     <div class="row">
         <div class="col-md-12">
             <div class="card">
