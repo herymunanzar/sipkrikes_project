@@ -10,7 +10,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex align-items-center">
-                        <h4 class="card-title">List Data Pelaporan Awal Korban Meninggal</h4>
+                        <h4 class="card-title">List Data Pelaporan Awal Korban Luka</h4>
                     </div>
                     <div class="table-responsive">
                         <table class="table no-wrap v-middle mb-0" id="dataTable">
