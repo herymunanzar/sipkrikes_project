@@ -45,65 +45,46 @@ class Pelaporans extends MY_Controller
             redirect(base_url('pelaporans'));
         }
 
-        $data['content'] = $this->pelaporans->where('id', $id)->first();
+        //$data['content'] = $this->pelaporans->where('id', $id)->first();
 
-        // $data['content'] = $this->pelaporans->select([
-        //                         'pelaporan.id AS id',
-        //                         'pelaporan.jenis AS jenis',
-        //                         'pelaporan.deskripsi AS deskripsi',
-        //                         'pelaporan.dusun AS dusun',
-        //                         'pelaporan.desa AS desa',
-        //                         'pelaporan.kec AS kec',
-        //                         'pelaporan.kab AS kab',
-        //                         'kabkot.nama_kabkot AS nama_kabkot',
-        //                         'pelaporan.prov AS prov',
-        //                         'prov.nama_prov AS nama_prov',
-        //                         'pelaporan.letak AS letak',
-        //                         'pelaporan.lainnya AS lainnya',
-        //                         'pelaporan.tanggal AS tanggal',
-        //                         'pelaporan.waktu AS waktu',
-        //                         'pelaporan.meninggal AS meninggal',
-        //                         'pelaporan.hilang AS hilang',
-        //                         'pelaporan.luka_berat AS luka_berat',
-        //                         'pelaporan.luka_ringan AS luka_ringan',
-        //                         'pelaporan.pengungsi AS pengungsi',
-        //                         'pelaporan.pengungsi_kk AS pengungsi_kk',
-        //                         'pelaporan.lokasi_ungsi AS lokasi_ungsi',
-        //                         'pelaporan.akses_mudah AS akses_mudah',
-        //                         'pelaporan.akses_sukar AS akses_sukar',
-        //                         'pelaporan.jalur AS jalur',
-        //                         'pelaporan.listrik AS listrik',
-        //                         'pelaporan.rs_bangun_rusak AS rs_bangun_rusak',
-        //                         'pelaporan.rs_bangun_tidak AS rs_bangun_tidak',
-        //                         'pelaporan.rs_layan_rusak AS rs_layan_rusak',
-        //                         'pelaporan.rs_layan_tidak AS rs_layan_tidak',
-        //                         'pelaporan.puskesmas_bangun_rusak AS puskesmas_bangun_rusak',
-        //                         'pelaporan.puskesmas_bangun_tidak AS puskesmas_bangun_tidak',
-        //                         'pelaporan.puskesmas_layan_rusak AS puskesmas_layan_rusak',
-        //                         'pelaporan.puskesmas_layan_tidak AS puskesmas_layan_tidak',
-        //                         'pelaporan.pustu_bangun_rusak AS pustu_bangun_rusak',
-        //                         'pelaporan.pustu_bangun_tidak AS pustu_bangun_tidak',
-        //                         'pelaporan.pustu_layan_rusak AS pustu_layan_rusak',
-        //                         'pelaporan.pustu_layan_tidak AS pustu_layan_tidak',
-        //                         'pelaporan.farmasi_bangun_rusak AS farmasi_bangun_rusak',
-        //                         'pelaporan.farmasi_bangun_tidak AS farmasi_bangun_tidak',
-        //                         'pelaporan.farmasi_layan_rusak AS farmasi_layan_rusak',
-        //                         'pelaporan.farmasi_layan_tidak AS farmasi_layan_tidak',
-        //                         'pelaporan.polindes_bangun_rusak AS polindes_bangun_rusak',
-        //                         'pelaporan.polindes_bangun_tidak AS polindes_bangun_tidak',
-        //                         'pelaporan.polindes_layan_rusak AS polindes_layan_rusak',
-        //                         'pelaporan.polindes_layan_tidak AS polindes_layan_tidak',
-        //                         'pelaporan.air AS air',
-        //                         'pelaporan.upaya AS upaya',
-        //                         'pelaporan.bantuan AS bantuan',
-        //                         'pelaporan.user AS user',
-        //                     ])
-        //                     ->join('prov')
-        //                     ->join('kabkot')
-        //                     ->like('pelaporan.prov', 'prov.id_prov')
-        //                     ->like('pelaporan.kab', 'kabkot.id_kabkot')
-        //                     ->where('pelaporan.id', $id)
-        //                     ->result();
+        $data['content'] = $this->pelaporans->select([
+                                'pelaporan_awal.id AS id',
+                                'pelaporan_awal.nama_dinas AS nama_dinas',
+                                'pelaporan_awal.jenis_bencana AS jenis_bencana',
+                                'pelaporan_awal.waktu_kejadian AS waktu_kejadian',
+                                'pelaporan_awal.deskripsi_bencana AS deskripsi_bencana',
+                                'prov.nama_prov AS nama_prov',
+                                'kabkot.nama_kabkot AS nama_kabkot',
+                                'pelaporan_awal.nama_kec AS nama_kec',
+                                'pelaporan_awal.desa_dusun AS desa_dusun',
+                                'pelaporan_awal.jumlah_penduduk_terancam AS jumlah_penduduk_terancam',
+                                'pelaporan_awal.topografi AS topografi',
+                                'pelaporan_awal.jumlah_korban_meninggal AS jumlah_korban_meninggal',
+                                'pelaporan_awal.jumlah_korban_hilang AS jumlah_korban_hilang',
+                                'pelaporan_awal.jumlah_luka_berat_rawat_inap AS jumlah_luka_berat_rawat_inap',
+                                'pelaporan_awal.jumlah_luka_ringan_rawat_jalan AS jumlah_luka_ringan_rawat_jalan',
+                                'pelaporan_awal.jumlah_pengungsi_penduduk_rentan AS jumlah_pengungsi_penduduk_rentan',
+                                'pelaporan_awal.fasilitas_umum_akses AS fasilitas_umum_akses',
+                                'pelaporan_awal.fasilitas_umum_jalur_komunikasi AS fasilitas_umum_jalur_komunikasi',
+                                'pelaporan_awal.fasilitas_umum_jaringan_listrik AS fasilitas_umum_jaringan_listrik',
+                                'pelaporan_awal.fasilitas_umum_air_bersih AS fasilitas_umum_air_bersih',
+                                'pelaporan_awal.kondisi_faskes_kondisi AS kondisi_faskes_kondisi',
+                                'pelaporan_awal.kondisi_faskes_fungsi_pelayanan AS kondisi_faskes_fungsi_pelayanan',
+                                'pelaporan_awal.upaya_penanggulangan_pelayanan_kesehatan AS upaya_penanggulangan_pelayanan_kesehatan',
+                                'pelaporan_awal.upaya_penanggulangan_pengendalian AS upaya_penanggulangan_pengendalian',
+                                'pelaporan_awal.upaya_penanggulangan_pelayanan_gizi AS upaya_penanggulangan_pelayanan_gizi',
+                                'pelaporan_awal.upaya_penanggulangan_pelayanan_kesehatan_jiwa AS upaya_penanggulangan_pelayanan_kesehatan_jiwa',
+                                'pelaporan_awal.upaya_penanggulangan_reproduksi_dan_kia AS upaya_penanggulangan_reproduksi_dan_kia',
+                                'pelaporan_awal.upaya_penanggulangan_dvi AS upaya_penanggulangan_dvi',
+                                'pelaporan_awal.upaya_penanggulangan_logistik_kesehatan AS upaya_penanggulangan_logistik_kesehatan',
+                                'pelaporan_awal.hambatan AS hambatan',
+                                'pelaporan_awal.bantuan_yang_diperlukan AS bantuan_yang_diperlukan',
+                                'pelaporan_awal.rencana_tindak_lanjut AS rencana_tindak_lanjut'
+                            ])
+                            ->join('prov')
+                            ->join('kabkot')
+                            ->where('pelaporan_awal.id', $id)
+                            ->first();
 
         if(!$data['content']){
             $this->session->set_flashdata('warning', 'Sorry, Data Not Found');

@@ -9,19 +9,19 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title mb-4">FORMULIR PELAPORAN AWAL KEJADIAN BENCANA atau RHA-FORM B1</h4>
+                    <h4 class="card-title mb-4">FORMULIR PELAPORAN AWAL KEJADIAN KRISIS KESEHATAN DINKES KAB./KOTA/PROVINSI</h4>
                     <form action="<?= base_url("pelaporans/cetak/$input->id") ?>" method="POST">
                         <?= form_hidden('id', $input->id) ?>
                         <?= form_hidden('user', $this->session->userdata('nama')) ?>
                         <div class="form-body">
                             <div class="form-group">
                                 <div class="row">
-                                    <label class="col-lg-3">A. Jenis Bencana</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5">A. Nama Dinas Kesehatan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->jenis ?></label>
+                                                    <label>: <?= $input->nama_dinas ?></label>
                                                 </div>
                                             </div>
                                         </div>
@@ -29,12 +29,12 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-3">B. Deskripsi Bencana</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5">B. Jenis Bencana</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->deskripsi ?></label>
+                                                    <label>: <?= $input->jenis_bencana ?></label>
                                                 </div>
                                             </div>
                                         </div>
@@ -42,95 +42,12 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-3">C. Lokasi Bencana</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 1. Provinsi</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5">C. Waktu Kejadian Bencana</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <?php foreach(getProvinsi() as $provinsi) : ?>
-                                                        <?php if($input->prov == $provinsi->id_prov){?>
-                                                            <label>: <?= $provinsi->nama_prov ?></label>
-                                                        <?php } ?>
-                                                    <?php endforeach ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 2. Kabupaten/Kota</label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <?php foreach(getKabkota($input->prov) as $kabkota) : ?>
-                                                        <?php if($input->kab == $kabkota->id_kabkot){?>
-                                                            <label>: <?= $kabkota->nama_kabkot ?></label>
-                                                        <?php } ?>
-                                                    <?php endforeach ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 3. Kecamatan</label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->kec ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 4. Desa/Kelurahan</label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->desa ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 5. Dusun</label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->dusun ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 6. Letak Geografis</label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->letak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; Lain - lain</label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->lainnya ?></label>
+                                                    <label>: <?= $input->waktu_kejadian ?></label>
                                                 </div>
                                             </div>
                                         </div>
@@ -138,27 +55,12 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-3">D. Waktu Kejadian Bencana</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 1. Tanggal</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5">D. Deskripsi Kejadian</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->tanggal ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 2. Waktu</label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->waktu ?></label>
+                                                    <label>: <?= $input->deskripsi_bencana ?></label>
                                                 </div>
                                             </div>
                                         </div>
@@ -166,90 +68,75 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-3">E. Jumlah Korban</label>
+                                    <label class="col-lg-5">E. Lokasi Bencana</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 1. Meninggal</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 1. Provinsi</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->meninggal ?></label>
+                                                    <label>: <?= $input->nama_prov ?></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 2. Hilang</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 2. Kabupaten/Kota</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->hilang ?></label>
+                                                    <label>: <?= $input->nama_kabkot ?></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 3. Luka Berat</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 3. Kecamatan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->luka_berat ?></label>
+                                                    <label>: <?= $input->nama_kec ?></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 4. Luka Ringan</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 4. Desa/Kelurahan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->luka_ringan ?></label>
+                                                    <label>: <?= $input->desa_dusun ?></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 5. Pengungsi</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jiwa</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 5. Jumlah Penduduk Terancam</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->pengungsi ?></label>
+                                                    <label>: <?= $input->jumlah_penduduk_terancam ?></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KK</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 6. Topografi</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->pengungsi_kk ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lokasi Pengungsian</label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->lokasi_ungsi ?></label>
+                                                    <label>: <?= $input->topografi ?></label>
                                                 </div>
                                             </div>
                                         </div>
@@ -257,328 +144,63 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-3">F. Fasilitas Umum</label>
+                                    <label class="col-lg-5">F. Jumlah Korban</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 1. Akses Ke Lokasi</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mudah dengan</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 1. Korban Meninggal</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->akses_mudah ?></label>
+                                                    <label>: <?= $input->jumlah_korban_meninggal ?></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sulit Karena</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 2. Korban Hilang</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->akses_sukar ?></label>
+                                                    <label>: <?= $input->jumlah_korban_hilang ?></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 2. Jalur Komunikasi </label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 3. Korban Luka Berat / Rawat Inap</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->jalur ?></label>
+                                                    <label>: <?= $input->jumlah_luka_berat_rawat_inap ?></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 3. Jaringan Listrik </label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 4. Korban Luka Ringan / Rawat Jalan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->listrik ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">G. Saranan Kesehatan yang Rusak</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 1. Jumlah dan Jenis Fasilitas Kesehatan</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a. Rumah Sakit</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangunan Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->rs_bangun_rusak ?></label>
+                                                    <label>: <?= $input->jumlah_luka_ringan_rawat_jalan ?></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangunan Tidak Rusak </label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 5. Pengungsi</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->rs_bangun_tidak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->rs_layan_rusak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan Tidak Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->rs_layan_tidak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b. Puskesmas</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangunan Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->puskesmas_bangun_rusak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangunan Tidak Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->puskesmas_bangun_tidak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->puskesmas_layan_rusak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan Tidak Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->puskesmas_layan_tidak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c. Pustu</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangunan Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->pustu_bangun_rusak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangunan Tidak Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->pustu_bangun_tidak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->pustu_layan_rusak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan Tidak Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->pustu_layan_tidak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d. Gudang Farmasi</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangunan Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->farmasi_bangun_rusak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangunan Tidak Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->farmasi_bangun_tidak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->farmasi_layan_rusak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan Tidak Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->farmasi_layan_tidak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e. Polindes</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangunan Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->polindes_bangun_rusak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangunan Tidak Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->polindes_bangun_tidak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->polindes_layan_rusak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pelayanan Tidak Rusak </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->polindes_layan_tidak ?></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3"> &nbsp;&nbsp;&nbsp; 2. Sumber Air Bersih </label>
-                                    <div class="col-lg-8">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <label>: <?= $input->air ?></label>
+                                                    <label>: <?= $input->jumlah_pengungsi_penduduk_rentan ?></label>
                                                 </div>
                                             </div>
                                         </div>
@@ -586,12 +208,51 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-3">H. Upaya Penanggulangan</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5">G. Fasilitas Umum</label>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 1. Akses ke lokasi kejadian krisis</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->upaya ?></label>
+                                                    <label>: <?= $input->fasilitas_umum_akses ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 2. Jalur komunikasi yang masih dapat digunakan</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->fasilitas_umum_jalur_komunikasi ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 3. Jaringan Listrik</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->fasilitas_umum_jaringan_listrik ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 4. Sumber air bersih yang digunakan</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->fasilitas_umum_air_bersih ?></label>
                                                 </div>
                                             </div>
                                         </div>
@@ -599,12 +260,154 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-3">I. Bantuan yang Diperlukan</label>
-                                    <div class="col-lg-8">
+                                    <label class="col-lg-5">H. Kondisi Fasilitas Kesehatan</label>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 1. Kondisi Fasilitas Kesehatan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
-                                                    <label>: <?= $input->bantuan ?></label>
+                                                    <label>: <?= $input->kondisi_faskes_kondisi ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 2 Kondisi Fungsi Pelayanan Fasilitas Kesehatan</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->kondisi_faskes_fungsi_pelayanan ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <label class="col-lg-5">I. Upaya Penanggulangan yang telah dilakukan</label>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 1 Upaya Sub Klaster Pelayanan Kesehatan</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->upaya_penanggulangan_pelayanan_kesehatan ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 2 Upaya Sub Klaster Pengendalian Penyakit, Penyehatan Lingkungan dan Air Bersih </label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->upaya_penanggulangan_pengendalian ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 3 Upaya Sub Klaster Pelayanan Gizi </label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->upaya_penanggulangan_pelayanan_gizi ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 4 Upaya Sub Klaster Pelayanan Kesehatan </label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->upaya_penanggulangan_pelayanan_kesehatan_jiwa ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 5 Upaya Sub Klaster Kesehatan Reproduksi</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->upaya_penanggulangan_reproduksi_dan_kia ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 6 Upaya Sub Klaster DVI </label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->upaya_penanggulangan_dvi ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 7 Upaya Tim Logistik Kesehatan</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->upaya_penanggulangan_logistik_kesehatan ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <label class="col-lg-5">J. Hambatan Pelayanan Kesehatan</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->hambatan ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <label class="col-lg-5">K. Bantuan yang Diperlukan Segera</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->bantuan_yang_diperlukan ?></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <label class="col-lg-5">L. Rencana Tidak Lanjut</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <label>: <?= $input->rencana_tindak_lanjut ?></label>
                                                 </div>
                                             </div>
                                         </div>

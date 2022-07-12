@@ -211,7 +211,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 6. Topografis</label>
+                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 6. Topografi</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
