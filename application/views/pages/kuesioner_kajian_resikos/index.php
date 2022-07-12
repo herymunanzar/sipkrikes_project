@@ -13,11 +13,7 @@
                         <h4 class="card-title">List Data Kajian Resiko Provinsi</h4>
                     </div>
                     <div class="table-responsive">
-<<<<<<< HEAD
-                        <table class="table table-bordered no-wrap v-middle mb-0" id="dataTable">
-=======
-                        <table class="table table-sm table-style-border table-striped no-wrap font-14">
->>>>>>> 057c3091e75b25ae31068a96f35524403e32e64c
+                        <table class="table table-sm table-style-border table-striped no-wrap font-14" id="dataTable">
                             <thead>
                                 <th class="py-2">Provinsi</th>
                                 <th class="py-2">Kabupaten / Kota</th>
