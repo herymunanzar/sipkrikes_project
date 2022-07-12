@@ -2,7 +2,7 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pelaporan_awal_korban_hilang_model extends MY_Model
+class Pelaporan_awal_korban_luka_model extends MY_Model
 {
     protected $table = 'pelaporan_awal_korban_luka';
     
@@ -10,8 +10,8 @@ class Pelaporan_awal_korban_hilang_model extends MY_Model
     {
         return [
             'id_pelaporan_awal'             => '', //have required validation
-            'nama_fasilitas_kesehatan'      => '',
-            'lokasi'                        => '',
+            'nama_fasilitas_pelayanan'      => '',
+            'id_kabkot'                     => '',
             'jumlah_rawat_inap_laki'        => '',
             'jumlah_rawat_inap_perempuan'   => '',
             'jumlah_rawat_jalan_laki'       => '',
@@ -42,8 +42,8 @@ class Pelaporan_awal_korban_hilang_model extends MY_Model
     {
         $data = [
             'id_pelaporan_awal'             => $input->id_pelaporan_awal, //have required validation
-            'nama_fasilitas_kesehatan'      => $input->nama_fasilitas_kesehatan,
-            'lokasi'                        => $input->lokasi,
+            'nama_fasilitas_pelayanan'      => $input->nama_fasilitas_pelayanan,
+            'id_kabkot'                     => $input->id_kabkot,
             'jumlah_rawat_inap_laki'        => $input->jumlah_rawat_inap_laki,
             'jumlah_rawat_inap_perempuan'   => $input->jumlah_rawat_inap_perempuan,
             'jumlah_rawat_jalan_laki'       => $input->jumlah_rawat_jalan_laki,

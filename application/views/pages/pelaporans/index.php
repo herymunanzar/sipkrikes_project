@@ -53,18 +53,18 @@
                                             </a>
                                         </td>
                                         <td class="border-top-0 text-center text-muted px-2 py-2">
-                                            <a href="<?= base_url("pelaporans/data_hilang/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("pelaporan_awal_korban_hilang/input_korban_hilang/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-pencil-alt text-info"></i>
                                             </a>
-                                            <a href="<?= base_url("pelaporans/lihat_data_hilang/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("pelaporan_awal_korban_hilang/lihat_korban_hilang/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-clipboard-list text-info"></i>
                                             </a>
                                         </td>
                                         <td class="border-top-0 text-center text-muted px-2 py-2">
-                                            <a href="<?= base_url("pelaporans/data_luka/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("pelaporan_awal_korban_luka/input_korban_luka/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-pencil-alt text-info"></i>
                                             </a>
-                                            <a href="<?= base_url("pelaporans/lihat_data_luka/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("pelaporan_awal_korban_luka/lihat_korban_luka/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-clipboard-list text-info"></i>
                                             </a>
                                         </td>
