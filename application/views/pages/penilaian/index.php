@@ -14,8 +14,8 @@
                         <div class="form-body">
                             <div class="form-group">
                                 <div class="row">
-                                    <label class="col-lg-4">A. Nama Dinas Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">A. Nama Dinas Kesehatan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -32,8 +32,8 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">B. Jenis Bencana</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">B. Jenis Bencana</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -56,11 +56,11 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">C. Waktu Kejadian Bencana</label>
+                                    <label class="col-lg-5">C. Waktu Kejadian Bencana</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 1. Tanggal</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 1. Tanggal</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -76,8 +76,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 2. Waktu</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 2. Waktu</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -94,8 +94,8 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">D. Deskripsi Bencana</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">D. Deskripsi Bencana</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -112,11 +112,11 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">E. Lokasi Bencana</label>
+                                    <label class="col-lg-5">E. Lokasi Bencana</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 1. Provinsi</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 1. Provinsi</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -139,8 +139,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 2. Kabupaten/Kota</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 2. Kabupaten/Kota</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -158,8 +158,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 3. Kecamatan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 3. Kecamatan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -177,8 +177,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 4. Desa/Kelurahan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 4. Desa/Kelurahan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -194,8 +194,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 5. Jumlah Penduduk Terancam</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 5. Jumlah Penduduk Terancam</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -211,8 +211,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 6. Topografi</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 6. Topografi</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -236,11 +236,11 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">F. Jumlah Korban</label>
+                                    <label class="col-lg-5">F. Jumlah Korban</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 1. Korban Meninggal</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 1. Korban Meninggal</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -256,8 +256,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 2. Korban Hilang</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 2. Korban Hilang</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -273,8 +273,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 3. Korban Luka Berat / Rawat Inap</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 3. Korban Luka Berat / Rawat Inap</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -290,8 +290,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 4. Korban Luka Ringan / Rawat Jalan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 4. Korban Luka Ringan / Rawat Jalan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -307,8 +307,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 5. Jumlah Gangguan Jiwa / Psikososial</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 5. Jumlah Gangguan Jiwa / Psikososial</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -324,8 +324,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 6. Jenis Penyakit Yang Berpotensi KLB</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 6. Jenis Penyakit Yang Berpotensi KLB</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -341,8 +341,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 7. Jumlah Pengungsi dan Penduduk Rentan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 7. Jumlah Pengungsi dan Penduduk Rentan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -359,14 +359,14 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">G. Fasilitas Umum</label>
+                                    <label class="col-lg-5">G. Fasilitas Umum</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 1. Akses ke lokasi kejadian krisis</label>
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 1. Akses ke lokasi kejadian krisis</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mudah dengan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mudah dengan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -385,8 +385,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 2. Jalur komunikasi yang dapat digunakan </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 2. Jalur komunikasi yang dapat digunakan </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -402,8 +402,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 3. Jaringan Listrik </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 3. Jaringan Listrik </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -426,8 +426,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 4 Sumber air bersih yang digunakan </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5"> &nbsp;&nbsp;&nbsp; 4 Sumber air bersih yang digunakan </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -447,11 +447,11 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">H. Kondisi Sanitasi dan Kesehatan Lingkungan di Lokasi Penampungan Pengungsi</label>
+                                    <label class="col-lg-10">H. Kondisi Sanitasi dan Kesehatan Lingkungan di Lokasi Penampungan Pengungsi</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 1 Jenis Tempat Penampungan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 1 Jenis Tempat Penampungan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -470,8 +470,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 2 Kapasitas Penampungan Pengungsi</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 2 Kapasitas Penampungan Pengungsi</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -491,15 +491,15 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">I. Ketersediaan Sumber Daya</label>
+                                    <label class="col-lg-10">I. Ketersediaan Sumber Daya</label>
                                 </div>
                                 <!-- DINAS KESEHATAN -->
                                 <div class="row">
-                                    <label class="col-lg-4">Dinas Kesehatan - Pembekalan Kesehatan</label>
+                                    <label class="col-lg-5">Dinas Kesehatan - Pembekalan Kesehatan</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 1. Obat dan Habis Pakai</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 1. Obat dan Habis Pakai</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -518,8 +518,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 2. Alat Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 2. Alat Kesehatan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -538,8 +538,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 3. Bahan Sanitasi - Kaporit  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 3. Bahan Sanitasi - Kaporit  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -558,8 +558,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 4. Bahan Sanitasi - PAC  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 4. Bahan Sanitasi - PAC  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -578,8 +578,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 5. Bahan Sanitasi - Aquatab  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 5. Bahan Sanitasi - Aquatab  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -598,8 +598,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 6. Bahan Sanitasi - Kantong Sampah  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 6. Bahan Sanitasi - Kantong Sampah  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -618,8 +618,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 7. Bahan Sanitasi - Repellent Lalat  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 7. Bahan Sanitasi - Repellent Lalat  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -638,8 +638,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 8. Bahan Sanitasi - Hygiene kit  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 8. Bahan Sanitasi - Hygiene kit  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -658,8 +658,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 9. Persalinan kit  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 9. Persalinan kit  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -678,8 +678,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 10. Jumlah SDM  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 10. Jumlah SDM  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -698,8 +698,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 11. Kompotensi SDM  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 11. Kompotensi SDM  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -718,11 +718,11 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">Dinas Kesehatan - Sarana Pendukung Pelayanan Kesehatan</label>
+                                    <label class="col-lg-10">Dinas Kesehatan - Sarana Pendukung Pelayanan Kesehatan</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 1. Transportasi operasional pelayanan kesehatan  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 1. Transportasi operasional pelayanan kesehatan  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -741,8 +741,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 2. Alat komunikasi </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 2. Alat komunikasi </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -761,8 +761,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 3. Sarana listrik </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 3. Sarana listrik </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -784,11 +784,11 @@
 
                                 <!-- RUMAH SAKIT / PKM -->
                                 <div class="row">
-                                    <label class="col-lg-4">Rumah Sakit / PKM - Perbekalan Kesehatan</label>
+                                    <label class="col-lg-5">Rumah Sakit / PKM - Perbekalan Kesehatan</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 1. Obat dan Habis Pakai</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 1. Obat dan Habis Pakai</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -807,8 +807,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 2. Alat Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 2. Alat Kesehatan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -827,8 +827,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 3. Bahan Sanitasi - Kaporit  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 3. Bahan Sanitasi - Kaporit  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -847,8 +847,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 4. Bahan Sanitasi - PAC  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 4. Bahan Sanitasi - PAC  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -867,8 +867,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 5. Bahan Sanitasi - Aquatab  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 5. Bahan Sanitasi - Aquatab  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -887,8 +887,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 6. Bahan Sanitasi - Kantong Sampah  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 6. Bahan Sanitasi - Kantong Sampah  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -907,8 +907,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 7. Bahan Sanitasi - Repellent Lalat  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 7. Bahan Sanitasi - Repellent Lalat  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -927,8 +927,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 8. Persalinan kit  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 8. Persalinan kit  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -947,8 +947,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 9. Air  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 9. Air  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -967,8 +967,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 10. Tempat Tidur  </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 10. Tempat Tidur  </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -987,11 +987,31 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">Rumah Sakit - Kebutuhan Tenaga Kesehatan </label>
+                                    <label class="col-lg-10">Rumah Sakit - Kebutuhan Tenaga Kesehatan </label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 1. Jenis tempat penampungan </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 1. Tenaga Kesehatan </label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <fieldset id="group1">
+                                                        <input type="radio" value="cukup" name="rs_tenaga_kesehatan"> Cukup </input>
+                                                        <input type="radio" value="tidak cukup" name="rs_tenaga_kesehatan" checked> Tidak Cukup </input>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-1">
+                                            <div class="col-md-12">
+                                                <?= form_error('rs_tenaga_kesehatan') ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 2. Jenis tempat penampungan </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1010,8 +1030,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 2. Kapasitas penampungan pengungsi </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 3. Kapasitas penampungan pengungsi </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1030,8 +1050,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 3. Kapasitas penyediaan Air Bersih </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 4. Kapasitas penyediaan Air Bersih </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1050,8 +1070,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 4. Sarana jamban Darurat </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 5. Sarana jamban Darurat </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1070,8 +1090,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 5. Tempat pembuangan sampah </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 6. Tempat pembuangan sampah </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1090,8 +1110,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 6. Sarana SPAL </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 7. Sarana SPAL </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1110,8 +1130,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 7. Penerangan </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 8. Penerangan </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1130,11 +1150,11 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">Rumah Sakit - Sarana Pendukung Pelayanan Kesehatan </label>
+                                    <label class="col-lg-10">Rumah Sakit - Sarana Pendukung Pelayanan Kesehatan </label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 1. Transportasi operasional pelayanan kesehatan </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 1. Transportasi operasional pelayanan kesehatan </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1153,8 +1173,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 2. Alat Komunikasi </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 2. Alat Komunikasi </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1173,8 +1193,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 3. Sarana listrik untuk pelayanan kesehatan </label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 3. Sarana listrik untuk pelayanan kesehatan </label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1194,11 +1214,11 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">M. Upaya Penanggulangan yang telah dilakukan</label>
+                                    <label class="col-lg-5">M. Upaya Penanggulangan yang telah dilakukan</label>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 1 Upaya Sub Klaster Pelayanan Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 1 Upaya Sub Klaster Pelayanan Kesehatan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1214,8 +1234,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 2 Upaya Sub Klaster Pengendalian Penyakit, Penyehatan Lingkungan dan Air Bersih</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 2 Upaya Sub Klaster Pengendalian Penyakit, Penyehatan Lingkungan dan Air Bersih</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1231,8 +1251,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 3 Upaya Sub Klaster Pelayanan Gizi</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 3 Upaya Sub Klaster Pelayanan Gizi</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1248,8 +1268,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 4 Upaya Sub Klaster Pelayanan Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 4 Upaya Sub Klaster Pelayanan Kesehatan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1265,8 +1285,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 5 Upaya Sub Klaster Kesehatan Reproduksi</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 5 Upaya Sub Klaster Kesehatan Reproduksi</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1282,8 +1302,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 6 Upaya Sub Klaster DVI</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 6 Upaya Sub Klaster DVI</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1299,8 +1319,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 7 Upaya Tim Logistik Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">&nbsp;&nbsp;&nbsp; 7 Upaya Tim Logistik Kesehatan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1317,8 +1337,8 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">J. Bantuan yang Diperlukan</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">J. Bantuan yang Diperlukan</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -1335,8 +1355,8 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <label class="col-lg-4">K. Rekomendasi</label>
-                                    <div class="col-lg-7">
+                                    <label class="col-lg-5">K. Rekomendasi</label>
+                                    <div class="col-lg-6">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">

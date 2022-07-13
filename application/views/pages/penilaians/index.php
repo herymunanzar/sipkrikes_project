@@ -37,67 +37,67 @@
                                         <td class="border-top-0 text-muted px-2 py-2 font-14"><?= $row->jenis_bencana ?></td>
                                         <td class="border-top-0 text-muted px-2 py-2 font-14"><?= $row->nama_prov ?></td>
                                         <td class="border-top-0 text-center text-muted px-2 py-2">
-                                            <a href="<?= base_url("pelaporan_awal_lokasi_bencana/input_lokasi_bencana/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_lokasi_bencana/input_lokasi_bencana/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-map-marker-alt text-info"></i>
                                             </a>
-                                            <a href="<?= base_url("pelaporan_awal_lokasi_bencana/lihat_lokasi_bencana/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_lokasi_bencana/lihat_lokasi_bencana/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-map text-info"></i>
                                             </a>
                                         </td>
                                         <td class="border-top-0 text-center text-muted px-2 py-2">
-                                            <a href="<?= base_url("pelaporan_awal_korban_meninggal/input_korban_meninggal/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_korban_meninggal/input_korban_meninggal/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-pencil-alt text-info"></i>
                                             </a>
-                                            <a href="<?= base_url("pelaporan_awal_korban_meninggal/lihat_korban_meninggal/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_korban_meninggal/lihat_korban_meninggal/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-clipboard-list text-info"></i>
                                             </a>
                                         </td>
                                         <td class="border-top-0 text-center text-muted px-2 py-2">
-                                            <a href="<?= base_url("pelaporan_awal_korban_hilang/input_korban_hilang/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_korban_hilang/input_korban_hilang/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-pencil-alt text-info"></i>
                                             </a>
-                                            <a href="<?= base_url("pelaporan_awal_korban_hilang/lihat_korban_hilang/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_korban_hilang/lihat_korban_hilang/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-clipboard-list text-info"></i>
                                             </a>
                                         </td>
                                         <td class="border-top-0 text-center text-muted px-2 py-2">
-                                            <a href="<?= base_url("pelaporan_awal_korban_luka/input_korban_luka/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_korban_luka/input_korban_luka/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-pencil-alt text-info"></i>
                                             </a>
-                                            <a href="<?= base_url("pelaporan_awal_korban_luka/lihat_korban_luka/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_korban_luka/lihat_korban_luka/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-clipboard-list text-info"></i>
                                             </a>
                                         </td>
                                         <td class="border-top-0 text-center text-muted px-2 py-2">
-                                            <a href="<?= base_url("pelaporan_awal_pengungsi/input_pengungsi/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_pengungsi/input_pengungsi/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-pencil-alt text-info"></i>
                                             </a>
-                                            <a href="<?= base_url("pelaporan_awal_pengungsi/lihat_pengungsi/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_pengungsi/lihat_pengungsi/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-clipboard-list text-info"></i>
                                             </a>
                                         </td>
                                         <td class="border-top-0 text-center text-muted px-2 py-2">
-                                            <a href="<?= base_url("pelaporan_awal_fasilitas_kesehatan/input_fasilitas_kesehatan/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_fasilitas_kesehatan/input_fasilitas_kesehatan/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-pencil-alt text-info"></i>
                                             </a>
-                                            <a href="<?= base_url("pelaporan_awal_fasilitas_kesehatan/lihat_fasilitas_kesehatan/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaian_cepat_fasilitas_kesehatan/lihat_fasilitas_kesehatan/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-clipboard-list text-info"></i>
                                             </a>
                                         </td>
                                         <td class="border-top-0 text-center text-muted px-2 py-2">
-                                            <a href="<?= base_url("pelaporans/detail/$row->id") ?>" class="btn btn-sm">
+                                            <a href="<?= base_url("penilaians/detail/$row->id") ?>" class="btn btn-sm">
                                                 <i class="fas fa-info text-info"></i>
                                             </a>
                                         </td>
                                         <!-- Hanya admin yang boleh melakukan aksi pada data -->
                                         <?php if ($this->session->userdata('role') == 'admin') : ?>
                                             <td class="border-top-0 text-center text-muted px-2 py-2">
-                                                <a href="<?= base_url("pelaporans/edit/$row->id") ?>" class="btn btn-sm">
+                                                <a href="<?= base_url("penilaians/edit/$row->id") ?>" class="btn btn-sm">
                                                     <i class="fas fa-edit text-info"></i>
                                                 </a>
                                             </td>
                                             <td class="border-top-0 text-center text-muted px-2 py-2">
-                                                <a href="<?= base_url("pelaporans/hapus/$row->id") ?>" class="btn btn-sm">
+                                                <a href="<?= base_url("penilaians/hapus/$row->id") ?>" class="btn btn-sm">
                                                     <i class="fas fa-trash text-info"></i>
                                                 </a>
                                             </td>

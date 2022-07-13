@@ -34,7 +34,7 @@ class Penilaian extends MY_Controller
         }
 
         if (!$this->penilaian->validate()) {     // Jika validasi gagal maka arahkan ke form register lagi
-            $data['title'] = 'Rapid Health Assesment';
+            $data['title'] = 'SIP Krisis Kesehatan';
             $data['input'] = $input;
             $data['page']  = 'pages/penilaian/index';
             $data['breadcrumb_title']   = 'Register Penilaian';

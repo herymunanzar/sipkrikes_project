@@ -23,10 +23,16 @@ class Penilaians extends MY_Controller
     {
         $this->session->unset_userdata('keyword');
 
-        $data['title']              = 'Rapid Health Assesment';
+        $data['title']              = 'SIP Krisis Kesehatan';
         $data['breadcrumb_title']   = 'Penilaian Kejadian Bencana';
         $data['breadcrumb_path']    = 'Penilaian / List Data';
-        $data['content']            = $this->penilaians->get();
+        $data['content']            = $this->penilaians->select([
+                                        'penilaian_cepat.id AS id',
+                                        'penilaian_cepat.nama_dinas AS nama_dinas',
+                                        'penilaian_cepat.jenis_bencana AS jenis_bencana',
+                                        'prov.nama_prov AS nama_prov'])
+                                        ->join('prov')
+                                        ->get();
         $data['page']               = 'pages/penilaians/index';
 
         $this->view($data);
@@ -53,7 +59,7 @@ class Penilaians extends MY_Controller
         }
 
         if(!$this->penilaians->validate()){
-            $data['title']              = 'Rapid Health Assesment';
+            $data['title']              = 'SIP Krisis Kesehatan';
             $data['page']               = 'pages/penilaians/detail';
             $data['breadcrumb_title']   = 'Detail Penilaians Kejadian Bencana';
             $data['breadcrumb_path']    = 'Penilaian / Detail Data / Laporan Id : '.$data['input']->id ;
@@ -85,7 +91,7 @@ class Penilaians extends MY_Controller
         }
 
         if(!$this->penilaians->validate()){
-            $data['title']              = 'Rapid Health Assesment';
+            $data['title']              = 'SIP Krisis Kesehatan';
             $data['page']               = 'pages/pepenilaians/edit';
             $data['breadcrumb_title']   = 'Edit Penilaian Kejadian Bencana';
             $data['breadcrumb_path']    = 'Penilaians / Edit Data / Laporan Id : '.$data['input']->id ;
