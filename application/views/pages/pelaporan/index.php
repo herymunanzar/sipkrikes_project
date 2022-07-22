@@ -12,55 +12,56 @@
                     <h4 class="card-title mb-4">FORMULIR PELAPORAN AWAL KEJADIAN KRISIS KESEHATAN DINKES KAB./KOTA/PROVINSI</h4>
                     <form action="<?= base_url('pelaporan') ?>" method="POST">
                         <div class="form-body">
-                            <div class="form-group">
-                                <div class="row">
-                                    <label class="col-lg-4">A. Nama Dinas Kesehatan</label>
-                                    <div class="col-lg-7">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <?= form_input('nama_dinas', $input->nama_dinas, ['class' => 'form-control', 'placeholder' => 'Masukkan Nama Dinas Kesehatan']) ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-1">
-                                            <div class="col-md-12">
-                                                <?= form_error('nama_dinas') ?>
+
+                            <div class="row mb-3">
+                                <div class="col-lg-5 mb-3 font-weight-medium">A. Nama Dinas Kesehatan</div>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <?= form_input('nama_dinas', $input->nama_dinas, ['class' => 'form-control', 'placeholder' => 'Masukkan Nama Dinas Kesehatan']) ?>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">B. Deskripsi Bencana</label>
-                                    <div class="col-lg-7">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <select class="form-control" name="jenis_bencana" id="jenis-option">
-                                                        <?php foreach(getJenisBencana() as $jenis_bencana) : ?>
-                                                            <option value="<?= $jenis_bencana->nama_bencana ?>" <?= set_value('nama_bencana') == $jenis_bencana->nama_bencana ? 'selected' : '' ?>>
-                                                                <?= $jenis_bencana->nama_bencana ?>
-                                                            </option>
-                                                        <?php endforeach ?>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-1">
-                                            <div class="col-md-12">
-                                                <?= form_error('jenis_bencana') ?>
-                                            </div>
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <?= form_error('nama_dinas') ?>
                                         </div>
                                     </div>
                                 </div>
-                                <br>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-lg-5 mb-3 font-weight-medium">B. Deskripsi Bencana</div>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <select class="form-control" name="jenis_bencana" id="jenis-option">
+                                                    <?php foreach(getJenisBencana() as $jenis_bencana) : ?>
+                                                        <option value="<?= $jenis_bencana->nama_bencana ?>" <?= set_value('nama_bencana') == $jenis_bencana->nama_bencana ? 'selected' : '' ?>>
+                                                            <?= $jenis_bencana->nama_bencana ?>
+                                                        </option>
+                                                    <?php endforeach ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <?= form_error('jenis_bencana') ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
                                 <div class="row">
-                                    <label class="col-lg-4">C. Waktu Kejadian Bencana</label>
+                                    <div class="col-lg-5 mb-3 font-weight-medium">C. Waktu Kejadian Bencana</div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 1. Tanggal</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">1. Tanggal</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -76,8 +77,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 2. Waktu</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">2. Waktu</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -92,31 +93,33 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">D. Deskripsi Bencana</label>
-                                    <div class="col-lg-7">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <?= form_textarea('deskripsi_bencana', $input->deskripsi_bencana, ['class' => 'form-control', 'placeholder' => 'Masukkan Deskripsi Bencana']) ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-1">
-                                            <div class="col-md-12">
-                                                <?= form_error('deskripsi_bencana') ?>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-lg-5 mb-3 font-weight-medium">D. Deskripsi Bencana</div>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <?= form_textarea('deskripsi_bencana', $input->deskripsi_bencana, ['class' => 'form-control', 'placeholder' => 'Masukkan Deskripsi Bencana']) ?>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <?= form_error('deskripsi_bencana') ?>
+                                        </div>
+                                    </div>
                                 </div>
-                                <br>
+                            </div>
+                            
+                            <div class="mb-3">
                                 <div class="row">
-                                    <label class="col-lg-4">E. Lokasi Bencana</label>
+                                    <div class="col-lg-5 mb-3 font-weight-medium">E. Lokasi Bencana</div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 1. Provinsi</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">1. Provinsi</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -139,8 +142,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 2. Kabupaten/Kota</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">2. Kabupaten/Kota</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -158,8 +161,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 3. Kecamatan</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">3. Kecamatan</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -177,8 +180,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 4. Desa/Kelurahan</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">4. Desa/Kelurahan</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -194,8 +197,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 5. Jumlah Penduduk Terancam</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">5. Jumlah Penduduk Terancam</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -211,8 +214,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 6. Topografi</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">6. Topografi</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -234,13 +237,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
+                            </div>
+                            
+                            <div class="mb-3">
                                 <div class="row">
-                                    <label class="col-lg-4">F. Jumlah Korban</label>
+                                    <div class="col-lg-5 mb-3 font-weight-medium">F. Jumlah Korban</div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 1. Korban Meninggal</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">1. Korban Meninggal</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -256,8 +261,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 2. Korban Hilang</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">2. Korban Hilang</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -273,8 +278,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 3. Korban Luka Berat / Rawat Inap</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">3. Korban Luka Berat / Rawat Inap</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -290,8 +295,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 4. Korban Luka Ringan / Rawat Jalan</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">4. Korban Luka Ringan / Rawat Jalan</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -307,8 +312,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 5. Pengungsi</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">5. Pengungsi</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -323,24 +328,21 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
+                            </div>
+                            
+                            <div class="mb-3">
                                 <div class="row">
-                                    <label class="col-lg-4">G. Fasilitas Umum</label>
+                                    <div class="col-lg-5 mb-3 font-weight-medium">G. Fasilitas Umum</div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 1. Akses ke lokasi kejadian krisis</label>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mudah dengan</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">1. Akses ke lokasi kejadian krisis</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <fieldset id="group1">
-                                                        <input type="radio" value="mudah dijangkau" name="fasilitas_umum_akses"> Mudah Dijangkau </input>
-                                                        <input type="radio" value="sukar dijangkau" name="fasilitas_umum_akses" checked> Sukar Dijangkau </input>
-                                                    </fieldset>
-                                                </div>
+                                                <fieldset class="d-flex flex-fill gap-3">
+                                                    <label><input type="radio" value="mudah dijangkau" name="fasilitas_umum_akses"> Mudah Dijangkau </label>
+                                                    <label><input type="radio" value="sukar dijangkau" name="fasilitas_umum_akses" checked> Sukar Dijangkau </label>
+                                                </fieldset>
                                             </div>
                                         </div>
                                         <div class="row mt-1">
@@ -351,8 +353,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 2. Jalur komunikasi yang masih dapat digunakan </label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">2. Jalur komunikasi yang masih dapat digunakan </div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -368,8 +370,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 3. Jaringan Listrik </label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">3. Jaringan Listrik </div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -392,16 +394,14 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4"> &nbsp;&nbsp;&nbsp; 4 Sumber air bersih yang digunakan </label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">4 Sumber air bersih yang digunakan </div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <fieldset id="group1">
-                                                        <input type="radio" value="tercemar" name="fasilitas_umum_air_bersih"> Tercemar </input>
-                                                        <input type="radio" value="tidak tercemar" name="fasilitas_umum_air_bersih" checked> Tidak Tercemar </input>
-                                                    </fieldset>
-                                                </div>
+                                                <fieldset class="d-flex flex-fill gap-3">
+                                                    <label><input type="radio" value="tercemar" name="fasilitas_umum_air_bersih"> Tercemar </label>
+                                                    <label><input type="radio" value="tidak tercemar" name="fasilitas_umum_air_bersih" checked> Tidak Tercemar </label>
+                                                </fieldset>
                                             </div>
                                         </div>
                                         <div class="row mt-1">
@@ -411,21 +411,21 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
+                            </div>
+
+                            <div class="mb-3">
                                 <div class="row">
-                                    <label class="col-lg-4">H. Kondisi Fasilitas Kesehatan</label>
+                                    <div class="col-lg-5 mb-3 font-weight-medium">H. Kondisi Fasilitas Kesehatan</div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 1 Kondisi Fasilitas Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">1. Kondisi Fasilitas Kesehatan</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <fieldset id="group1">
-                                                        <input type="radio" value="rusak" name="kondisi_faskes_kondisi"> Rusak </input>
-                                                        <input type="radio" value="tidak rusak" name="kondisi_faskes_kondisi" checked> Tidak Rusak </input>
-                                                    </fieldset>
-                                                </div>
+                                                <fieldset class="d-flex flex-fill gap-3">
+                                                    <label><input type="radio" value="rusak" name="kondisi_faskes_kondisi"> Rusak </label>
+                                                    <label><input type="radio" value="tidak rusak" name="kondisi_faskes_kondisi" checked> Tidak Rusak </label>
+                                                </fieldset>
                                             </div>
                                         </div>
                                         <div class="row mt-1">
@@ -436,16 +436,14 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 2 Kondisi Fungsi Pelayanan Fasilitas Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">2. Kondisi Fungsi Pelayanan Fasilitas Kesehatan</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <fieldset id="group1">
-                                                        <input type="radio" value="berfungsi" name="kondisi_faskes_fungsi_pelayanan"> Berfungsi </input>
-                                                        <input type="radio" value="tidak berfungsi" name="kondisi_faskes_fungsi_pelayanan" checked> Tidak Berfungsi </input>
-                                                    </fieldset>
-                                                </div>
+                                                <fieldset class="d-flex flex-fill gap-3">
+                                                    <label><input type="radio" value="berfungsi" name="kondisi_faskes_fungsi_pelayanan"> Berfungsi </label>
+                                                    <label><input type="radio" value="tidak berfungsi" name="kondisi_faskes_fungsi_pelayanan" checked> Tidak Berfungsi </label>
+                                                </fieldset>
                                             </div>
                                         </div>
                                         <div class="row mt-1">
@@ -455,13 +453,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
+                            </div>
+
+                            <div class="mb-3">
                                 <div class="row">
-                                    <label class="col-lg-4">I. Upaya Penanggulangan yang telah dilakukan</label>
+                                    <div class="col-lg-5 mb-3 font-weight-medium">I. Upaya Penanggulangan yang telah dilakukan</div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 1 Upaya Sub Klaster Pelayanan Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">1. Upaya Sub Klaster Pelayanan Kesehatan</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -477,8 +477,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 2 Upaya Sub Klaster Pengendalian Penyakit, Penyehatan Lingkungan dan Air Bersih</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">2. Upaya Sub Klaster Pengendalian Penyakit, Penyehatan Lingkungan dan Air Bersih</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -494,8 +494,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 3 Upaya Sub Klaster Pelayanan Gizi</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">3. Upaya Sub Klaster Pelayanan Gizi</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -511,8 +511,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 4 Upaya Sub Klaster Pelayanan Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">4. Upaya Sub Klaster Pelayanan Kesehatan</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -528,8 +528,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 5 Upaya Sub Klaster Kesehatan Reproduksi</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">5. Upaya Sub Klaster Kesehatan Reproduksi</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -545,8 +545,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 6 Upaya Sub Klaster DVI</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">6. Upaya Sub Klaster DVI</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -562,8 +562,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-lg-4">&nbsp;&nbsp;&nbsp; 7 Upaya Tim Logistik Kesehatan</label>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-5 ml-3 ml-lg-0 pl-3 pl-lg-5">7. Upaya Tim Logistik Kesehatan</div>
+                                    <div class="col-lg-7 ml-3 ml-lg-0 mb-3">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="input-group">
@@ -578,9 +578,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
+                            </div>
+
+                            <div class="mb-3">
                                 <div class="row">
-                                    <label class="col-lg-4">J. Hambatan Pelayanan Kesehatan</label>
+                                    <div class="col-lg-5 font-weight-medium">J. Hambatan Pelayanan Kesehatan</div>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -596,9 +598,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
+                            </div>
+
+                            <div class="mb-3">
                                 <div class="row">
-                                    <label class="col-lg-4">K. Bantuan yang Diperlukan Segera</label>
+                                    <div class="col-lg-5 font-weight-medium">K. Bantuan yang Diperlukan Segera</div>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -614,9 +618,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
+                            </div>
+
+                            <div class="mb-3"> 
                                 <div class="row">
-                                    <label class="col-lg-4">L. Rencana Tidak Lanjut</label>
+                                    <div class="col-lg-5 font-weight-medium">L. Rencana Tidak Lanjut</div>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -633,6 +639,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <div class="form-actions">
                             <div class="text-right">

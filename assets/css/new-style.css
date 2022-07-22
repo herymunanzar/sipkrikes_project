@@ -57,8 +57,12 @@
 
     .sidebar-nav #sidebarnav .sidebar-item .sidebar-link {
         /* font-size: 14px !important; */
-        padding: 30px !important;
+        padding: 10px !important;
     }
+
+    /* #main-wrapper[data-sidebartype="mini-sidebar"] .left-sidebar {
+        left: -260px;
+    } */
 }
 
 .table-style {
@@ -77,4 +81,8 @@
 
 .gap-2 {
     gap: 0.5rem;
+}
+
+.gap-3 {
+    gap: 1rem;
 }
