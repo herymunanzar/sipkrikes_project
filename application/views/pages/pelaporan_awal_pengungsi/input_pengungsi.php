@@ -13,9 +13,8 @@
                     <form action="<?= base_url('pelaporan_awal_pengungsi/input_pengungsi/'.$data->id) ?>" method="POST">
                         <?= form_hidden('id_pelaporan_awal', $data->id) ?>
                         <div class="form-body">
-                            <div class="form-group">
-                                <div class="row">
-                                    <label class="col-lg-4">Kabupaten / Kota</label>
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Kabupaten / Kota</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -38,9 +37,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Kecamatan</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Kecamatan</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -58,9 +57,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Lokasi Pengungsian</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Lokasi Pengungsian</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -76,9 +75,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Gangguan Jiwa Anak</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Gangguan Jiwa Anak</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -94,9 +93,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Gangguan Jiwa Dewasa</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Gangguan Jiwa Dewasa</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -112,9 +111,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Pengungsi Laki - laki</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Pengungsi Laki - laki</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -130,9 +129,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Pengungsi Perempuan</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Pengungsi Perempuan</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -148,9 +147,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Pengungsi KK</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Pengungsi KK</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -166,9 +165,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Penduduk Rentan Bayi</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Penduduk Rentan Bayi</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -184,9 +183,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Penduduk Rentan Balita</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Penduduk Rentan Balita</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -202,9 +201,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Penduduk Rentan Bumil</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Penduduk Rentan Bumil</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -220,9 +219,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Penduduk Rentan Buteki</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Penduduk Rentan Buteki</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -238,9 +237,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Penduduk Rentan Cacat Laki - Laki</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Penduduk Rentan Cacat Laki - Laki</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -256,9 +255,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Penduduk Rentan Cacat Perempuan</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Penduduk Rentan Cacat Perempuan</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -274,9 +273,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Penduduk Rentan Lansia Laki - laki</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Penduduk Rentan Lansia Laki - laki</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -292,9 +291,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jumlah Penduduk Rentan Lansia Perempuan</label>
+                                
+                                <div class="row mb-3">
+                                    <label class="col-lg-5">Jumlah Penduduk Rentan Lansia Perempuan</label>
                                     <div class="col-lg-7">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -310,7 +309,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="form-actions">
                             <div class="text-right">

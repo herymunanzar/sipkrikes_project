@@ -13,133 +13,131 @@
                     <form action="<?= base_url('pelaporan_awal_korban_meninggal/input_korban_meninggal/'.$data->id) ?>" method="POST">
                         <?= form_hidden('id_pelaporan_awal', $data->id) ?>
                         <div class="form-body">
-                            <div class="form-group">
-                                <div class="row">
-                                    <label class="col-lg-4">Nama</label>
-                                    <div class="col-lg-7">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <?= form_input('nama', $input->nama, ['class' => 'form-control', 'placeholder' => 'Masukkan nama korban']) ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-1">
-                                            <div class="col-md-12">
-                                                <?= form_error('nama') ?>
+                            <div class="row mb-3">
+                                <label class="col-lg-5">Nama</label>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <?= form_input('nama', $input->nama, ['class' => 'form-control', 'placeholder' => 'Masukkan nama korban']) ?>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Jenis Kelamin</label>
-                                    <div class="col-lg-7">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <select class="form-control" name="jenis_kelamin" id="jenis_kelamin-option">
-                                                        <option value="" selected>=== Pilih Jenis Kelamin ===</option>
-                                                        <option value="Laki - laki">Laki - laki</option>
-                                                        <option value="Perempuan">Perempuan</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-1">
-                                            <div class="col-md-12">
-                                                <?= form_error('jenis_kelamin') ?>
-                                            </div>
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <?= form_error('nama') ?>
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4">Usia</label>
-                                    <div class="col-lg-7">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <?= form_input('usia', $input->usia, ['class' => 'form-control', 'placeholder' => 'Masukkan usia korban']) ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-1">
-                                            <div class="col-md-12">
-                                                <?= form_error('usia') ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4"> Kewarganegaraan</label>
-                                    <div class="col-lg-7">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <?= form_input('kewarganegaraan', $input->kewarganegaraan, ['class' => 'form-control', 'placeholder' => 'Masukkan nomer pasport']) ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-1">
-                                            <div class="col-md-12">
-                                                <?= form_error('kewarganegaraan') ?>
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <label class="col-lg-5">Jenis Kelamin</label>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <select class="form-control" name="jenis_kelamin" id="jenis_kelamin-option">
+                                                    <option value="" selected>=== Pilih Jenis Kelamin ===</option>
+                                                    <option value="Laki - laki">Laki - laki</option>
+                                                    <option value="Perempuan">Perempuan</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4"> Alamat</label>
-                                    <div class="col-lg-7">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <?= form_input('alamat_korban', $input->alamat_korban, ['class' => 'form-control', 'placeholder' => 'Masukkan alamat korban']) ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-1">
-                                            <div class="col-md-12">
-                                                <?= form_error('alamat_korban') ?>
-                                            </div>
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <?= form_error('jenis_kelamin') ?>
                                         </div>
                                     </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4"> Tempat Meninggal</label>
-                                    <div class="col-lg-7">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <?= form_input('tempat_meninggal', $input->tempat_meninggal, ['class' => 'form-control', 'placeholder' => 'Masukkan tempat meninggal']) ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-1">
-                                            <div class="col-md-12">
-                                                <?= form_error('tempat_meninggal') ?>
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <label class="col-lg-5">Usia</label>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <?= form_input('usia', $input->usia, ['class' => 'form-control', 'placeholder' => 'Masukkan usia korban']) ?>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <?= form_error('usia') ?>
+                                        </div>
+                                    </div>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <label class="col-lg-4"> Penyebab Kematian </label>
-                                    <div class="col-lg-7">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="input-group">
-                                                    <?= form_input('penyebab_kematian', $input->penyebab_kematian, ['class' => 'form-control', 'placeholder' => 'Masukkan penyebab kematian']) ?>
-                                                </div>
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <label class="col-lg-5"> Kewarganegaraan</label>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <?= form_input('kewarganegaraan', $input->kewarganegaraan, ['class' => 'form-control', 'placeholder' => 'Masukkan nomer pasport']) ?>
                                             </div>
                                         </div>
-                                        <div class="row mt-1">
-                                            <div class="col-md-12">
-                                                <?= form_error('penyebab_kematian') ?>
+                                    </div>
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <?= form_error('kewarganegaraan') ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <label class="col-lg-5"> Alamat</label>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <?= form_input('alamat_korban', $input->alamat_korban, ['class' => 'form-control', 'placeholder' => 'Masukkan alamat korban']) ?>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <?= form_error('alamat_korban') ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <label class="col-lg-5"> Tempat Meninggal</label>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <?= form_input('tempat_meninggal', $input->tempat_meninggal, ['class' => 'form-control', 'placeholder' => 'Masukkan tempat meninggal']) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <?= form_error('tempat_meninggal') ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label class="col-lg-5"> Penyebab Kematian </label>
+                                <div class="col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <?= form_input('penyebab_kematian', $input->penyebab_kematian, ['class' => 'form-control', 'placeholder' => 'Masukkan penyebab kematian']) ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-1">
+                                        <div class="col-md-12">
+                                            <?= form_error('penyebab_kematian') ?>
                                         </div>
                                     </div>
                                 </div>

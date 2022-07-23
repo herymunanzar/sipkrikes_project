@@ -13,7 +13,7 @@
                     <form action="<?= base_url('kuesioner_kajian_resiko') ?>" method="POST">
                         <div class="form-body">
                             <!-- provinsi  -->
-                            <div class="row">
+                            <div class="row mb-3">
                                 <div class="col-lg-5">Pilih Provinsi</div>
                                 <div class="col-lg-7">
                                     <div class="row">
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <!-- kabupaten  -->
-                            <div class="row">
+                            <div class="row mb-3">
                                 <div class="col-lg-5">Pilih Kabupaten / Kota</div>
                                 <div class="col-lg-7">
                                     <div class="row">
